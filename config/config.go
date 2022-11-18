@@ -10,7 +10,6 @@ type Config struct {
 	Url               string `yaml:"url" mapstructure:"url"`
 	SecretId          string `yaml:"secret_id" mapstructure:"secret_id"`
 	SecretKey         string `yaml:"secret_key" mapstructure:"secret_key"`
-	Dir               string `yaml:"dir" mapstructure:"dir"`
 	Path              string `yaml:"path" mapstructure:"path"`
 	DeleteRemote      bool   `yaml:"delete_remote" mapstructure:"delete_remote"`
 	ServerChanSendKey string `yaml:"serverchan_send_key" mapstructure:"serverchan_send_key"`

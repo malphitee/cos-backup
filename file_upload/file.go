@@ -75,9 +75,9 @@ func (f *FileTool) SyncToCos() {
 	// 获取配置
 	config := config2.GetConfigFromYaml()
 	// 获取文件列表
-	files := f.ListDir(config.Dir + "/" + config.Path)
+	files := f.ListDir(config.Path)
 	// 获取文件md5
-	m := f.CalcFilesMd5(config.Dir, files)
+	m := f.CalcFilesMd5(config.Path, files)
 	// 获取文件配置
 	cosTool := cos_tool.CosTool{
 		Prefix:    "",
@@ -106,7 +106,7 @@ func (f *FileTool) SyncToCos() {
 				d := dir
 				n := fileName
 				f.Upload(d, n, wg, needUploadFiles, lock)
-			}(&wg, config.Dir, localFileName, needUploadFiles, &lock)
+			}(&wg, config.Path, localFileName, needUploadFiles, &lock)
 		}
 	}
 	wg.Wait()

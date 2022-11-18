@@ -1,7 +1,6 @@
 url:
 secret_id:
 secret_key:
-dir:
 path:
 delete_remote:
 serverchan_send_key:
