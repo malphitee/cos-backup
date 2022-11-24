@@ -73,7 +73,7 @@ func (f *FileTool) CalcFilesMd5(path string, files []string) map[string]string {
 
 func (f *FileTool) SyncToCos() {
 	// 获取配置
-	config := config2.GetConfigFromYaml()
+	config := config2.GetConfig()
 	// 获取文件列表
 	files := f.ListDir(config.Path)
 	// 获取文件md5
@@ -118,7 +118,8 @@ func (f *FileTool) SyncToCos() {
 
 	// 如果有信息需要通知，进行ServerChan推送
 	if len(needUploadFiles) > 0 {
-		(&notification.NotifyTool{}).DoServerChanNotify(config, needUploadFiles)
+		title, desc, short := notification.GetNotifyData(needUploadFiles)
+		notification.SendNotify(title, desc, short)
 	}
 
 }

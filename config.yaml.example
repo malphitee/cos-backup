@@ -3,4 +3,7 @@ secret_id:
 secret_key:
 path:
 delete_remote:
+notify_driver:
 serverchan_send_key:
+gotify_token:
+gotify_url:
