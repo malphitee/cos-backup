@@ -1,7 +1,7 @@
 package main
 
 import (
-	"backFolderToCos/file_upload"
+	"cos_backup/file_upload"
 	"fmt"
 )
 

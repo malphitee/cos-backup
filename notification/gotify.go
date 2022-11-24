@@ -1,7 +1,7 @@
 package notification
 
 import (
-	"backFolderToCos/config"
+	"cos_backup/config"
 	"fmt"
 	"io"
 	"net/http"

@@ -1,8 +1,8 @@
 package cos_tool
 
 import (
-	config2 "backFolderToCos/config"
 	"context"
+	config2 "cos_backup/config"
 	"fmt"
 	"net/http"
 	"net/url"

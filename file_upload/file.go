@@ -1,9 +1,9 @@
 package file_upload
 
 import (
-	config2 "backFolderToCos/config"
-	"backFolderToCos/cos_tool"
-	"backFolderToCos/notification"
+	config2 "cos_backup/config"
+	"cos_backup/cos_tool"
+	"cos_backup/notification"
 	"crypto/md5"
 	"encoding/hex"
 	"fmt"
