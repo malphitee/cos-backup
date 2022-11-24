@@ -1,8 +1,11 @@
-module backFolderToCos
+module cos_backup
 
 go 1.17
 
-require github.com/spf13/viper v1.14.0
+require (
+	github.com/spf13/viper v1.14.0
+	github.com/tencentyun/cos-go-sdk-v5 v0.7.40
+)
 
 require (
 	github.com/clbanning/mxj v1.8.4 // indirect
@@ -19,7 +22,6 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
-	github.com/tencentyun/cos-go-sdk-v5 v0.7.40 // indirect
 	golang.org/x/sys v0.0.0-20220908164124-27713097b956 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
